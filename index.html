@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Multi Game Hub</h1>
+        <div class="game-selector">
+            <button id="tictactoeBtn">Tic-Tac-Toe</button>
+            <button id="racingBtn">Racing Cars</button>
+            <button id="pacmanBtn">Pac-Man</button>
+        </div>
+
+        <div id="tictactoe" class="game" style="display: none;">
+            <h2>Tic-Tac-Toe</h2>
+            <div id="ticTacToeBoard" class="board"></div>
+            <button onclick="resetTicTacToe()">Reset Game</button>
+        </div>
+
+        <div id="racing" class="game" style="display: none;">
+            <h2>Racing Cars</h2>
+            <p>Racing game is under development!</p>
+        </div>
+
+        <div id="pacman" class="game" style="display: none;">
+            <h2>Pac-Man</h2>
+            <p>Pac-Man is under development!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
