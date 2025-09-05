@@ -1,0 +1,10 @@
+<script>
+fetch("https://script.google.com/macros/s/AKfycbxnYo8vV9_WlcrRHK--LNas-kNUyPt-h3dHbLzf7aVPCngYfjTe6yPDAHJhxAQs806t/exec")
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(row => {
+      const [name, score, timestamp] = row;
+      document.body.innerHTML += `<p>${name} scored ${score} at ${new Date(timestamp).toLocaleString()}</p>`;
+    });
+  });
+</script>
